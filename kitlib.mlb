@@ -6,6 +6,7 @@ in base/base.mlb
    listsort/listsort.mlb
    md5/md5.mlb
    pickle/pickle.mlb
+   pprint/pprint.mlb
    random/random.mlb
    regexp/regexp.mlb
    set/set.mlb
