@@ -18,6 +18,7 @@ below are denoted with an `f` in parenthesis, and structures with an `s` in case
  `listsort/listsort.mlb` | LISTSORT, Listsort
  `md5/md5.mlb` | MD5, Md5
  `pickle/pickle.mlb` | PICKLE, Pickle
+ `pprint/pprint.mlb` | PPRINT, PPrint
  `random/random.mlb` | RANDOM, Random
  `regexp/regexp.mlb` | REG_EXP, RegExp
  `set/set.mlb` | MONO_SET, IntSet, NatSet, StringSet, OrderSet (f)

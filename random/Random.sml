@@ -5,14 +5,6 @@ structure Random : RANDOM =
 
     (* Generating random numbers.  Paulson, page 96 *)
 
-    fun getrealtime() : {sec : int, usec : int} =
-        let val t = Time.now()
-            val r = Time.toReal t
-            val s = Real.floor r
-            val us = Real.floor (1000.0 * (r - real s))
-        in {sec=s, usec=us}
-        end
-
     type generator = {seedref : real ref}
 
     val a = 16807.0 
@@ -24,19 +16,8 @@ structure Random : RANDOM =
     fun newgenseed seed = {seedref = ref (nextrand seed)}
 
     fun newgen () =
-      let val {sec, usec} = getrealtime ()
-      in newgenseed (real sec + real usec) 
-      end
-      
-(*
-    fun newgen () =
-      let (*val {sec, usec} = Time.now ()*)
-	val now = Time.now ()
-      in (*newgenseed (real sec + real usec) *)
-(*	newgenseed (real(Time.toMicroseconds now)) *)  (* raises Overflow; ME 1998-10-20*)
-	newgenseed (Time.toReal now)
-      end
-*)
+        newgenseed (Time.toReal(Time.now()))
+
     fun random {seedref as ref seed} = (seedref := nextrand seed; seed / m)
 
     fun randomlist (n, {seedref as ref seed0}) = 
