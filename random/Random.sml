@@ -6,7 +6,12 @@ structure Random : RANDOM =
     (* Generating random numbers.  Paulson, page 96 *)
 
     fun getrealtime() : {sec : int, usec : int} =
-      prim("sml_getrealtime", ())
+        let val t = Time.now()
+            val r = Time.toReal t
+            val s = Real.floor r
+            val us = Real.floor (1000.0 * (r - real s))
+        in {sec=s, usec=us}
+        end
 
     type generator = {seedref : real ref}
 
