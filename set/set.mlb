@@ -1,0 +1,8 @@
+local $(SML_LIB)/basis/basis.mlb
+      ../base/base.mlb
+      set_impl.mlb
+in IntSet.sml
+   NatSet.sml
+   OrderSet.sml
+   StringSet.sml
+end

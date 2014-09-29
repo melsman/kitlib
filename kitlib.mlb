@@ -1,0 +1,15 @@
+local
+  $(SML_LIB)/basis/basis.mlb
+in base/base.mlb
+   finmap/finmap.mlb
+   hashtable/hashtable.mlb
+   listsort/listsort.mlb
+   md5/md5.mlb
+   pickle/pickle.mlb
+   random/random.mlb
+   regexp/regexp.mlb
+   set/set.mlb
+   sml90/sml90.mlb
+   susp/susp.mlb
+   utest/utest.mlb
+end

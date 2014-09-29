@@ -1,8 +1,16 @@
 License
 
-Various files are distributed under different licenses.
+Files are distributed under different licenses.
 
-Files not mentioned below are distributed under the [MIT License](doc/MIT_LICENSE).
+Files not mentioned below are distributed under the MIT License; see
+the file doc/license/MIT_LICENSE.
+
+AT&T License (doc/license/copyright.att)
+  pickle/POLYHASH.sml pickle/Polyhash.sml
+
+MLton License (doc/license/MLton-LICENSE)
+  md5/md5.sig md5/md5.sml
+
 
 
 

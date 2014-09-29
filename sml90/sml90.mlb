@@ -1,0 +1,6 @@
+local
+  $(SML_LIB)/basis/basis.mlb
+in
+  SML90.sig
+  SML90.sml
+end
