@@ -11,7 +11,7 @@ whereas functors and structures start with a capital letter (functors
 below are denoted with an f in parenthesis).
 
  MLB file   | modules
- ------------------
+ -----------|----------
  base.mlb   | ORDER
  pickle.mlb | PICKLE, Pickle
  set.mlb    | ORDER_SET, IntSet
