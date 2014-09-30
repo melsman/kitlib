@@ -1,0 +1,4 @@
+local $(SML_LIB)/basis/basis.mlb
+      ../regexp.mlb
+in regexp2.sml
+end

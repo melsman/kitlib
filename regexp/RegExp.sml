@@ -5,8 +5,7 @@
  * Larsen. Support for regular expression classes and parenthesis
  * extraction by Martin Elsman. mael 2001-09-29. *)
 
-structure RegExp :> REG_EXP =
-struct
+structure RegExp :> REG_EXP = struct
 
 structure Set = IntSet
 structure Map = IntFinMap

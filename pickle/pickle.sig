@@ -1,10 +1,10 @@
-(* Generic pickle/serialization library
- * Copyright, Martin Elsman 2003-2014 
- * MIT Licence
- *)
+(** Generic pickle/serialization library.
 
-signature PICKLE =
-  sig
+Copyright, Martin Elsman 2003-2014. MIT Licence.
+
+*)
+
+signature PICKLE = sig
     type 'a pu
 
     val pickle    : 'a pu -> 'a -> string
@@ -137,10 +137,6 @@ for two mutually recursive datatypes.
 
 [unpickle' pu hce s] returns a pair of the result of unpickling s and
 an accumulated hashcons environment.
-
-[get is] reads a word from the instream is.
-
-[out (w,os)] writes a word to the outstream os.
 
 [register vs pu] returns a pickler-unpickler with the property
 that a pickled value equal to a value in vs is equal to the
