@@ -6,6 +6,7 @@ constructing document values, which can then be printed using 'output'
 or converted into a string using 'toString'.
 
 A document can be one of three things:
+
   (1) a LEAF, containing a string which will not be decomposed or 
       split over lines; 
   (2) a NODE with a 'start' string, a 'finish' string, a list of 
@@ -50,7 +51,6 @@ Originally written by Mads Tofte, 1989. Modified by Martin Elsman.
 *)
 
 signature PPRINT = sig
-
   datatype sep = NOSEP | LEFT of string | RIGHT of string
 
   datatype doc = LEAF of string
@@ -77,9 +77,6 @@ end
 (**
 
 [type doc] is the type of documents to be printed. 
-
-[layoutAtom pr] returns a function to build a leaf document, given a
-simple printing routine pr.
 
 [oneLiner d] formats doc to a single string of indefinite length.
 

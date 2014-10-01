@@ -28,18 +28,18 @@ signature MONO_FINMAP = sig
 
   exception Restrict of string
   val restrict   : (dom -> string) * 'b map * dom list -> 'b map
-  (* raises exception Restrict if an element
-     of the list is not in the domain of the map. *)
-                                                           
   val enrich     : ('b * 'b -> bool) -> ('b map * 'b map) -> bool
 end
 
 (**
-
 [addList l m] adds a list of associations to a map.
 
 [mergeMap f m1 m2] merges two finite maps, with a composition function
 to apply to the codomains of domains which clash.
+
+[restrict (f,m,d)] returns a map with domain d and values as in m.
+Raises exception Restrict if an element of the list is not in the
+domain of the map.
 
 [enrich en (A, B)] returns true if for all a and b such that b \in B
 and a \in (A \restrict dom(B)) we have en(a,b).

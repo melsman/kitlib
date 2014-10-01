@@ -1,6 +1,6 @@
 local $(SML_LIB)/basis/basis.mlb
       ../base/base.mlb
-in MONO_FINMAP.sml
+in MONO_FINMAP.sig
    IntFinMapPTImpl.sml
    OrderFinMapImpl.sml
 end

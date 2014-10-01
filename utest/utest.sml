@@ -1,3 +1,5 @@
+(* Unit test functionality *)
+
 structure Utest : UTEST = struct
 
 val wrongCount = ref 0

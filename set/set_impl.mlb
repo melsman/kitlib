@@ -1,7 +1,7 @@
 local $(SML_LIB)/basis/basis.mlb
       ../base/base.mlb
 in
-   MONO_SET.sml
+   MONO_SET.sig
    IntSetImpl.sml
    NatSetImpl.sml
    OrderSetImpl.sml

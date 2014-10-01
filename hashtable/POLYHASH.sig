@@ -1,14 +1,16 @@
-(* Polyhash -- polymorphic hashtables as in the SML/NJ Library
- * -- modified for the ML Kit, 2001-06-07                     
- *
- * COPYRIGHT (c) 1992 by AT&T Bell Laboratories.
- * See file ../doc/license/copyright.att for details.
- *
- * Original author: John Reppy, AT&T Bell Laboratories, Murray Hill, NJ 07974
- *)
+(** Polyhash -- polymorphic hashtables as in the SML/NJ Library. 
 
-signature POLYHASH =
-  sig
+Modified for the MLKit, 2001-06-07.
+
+COPYRIGHT (c) 1992 by AT&T Bell Laboratories.
+
+See file ../doc/license/copyright.att for details.
+
+Original author: John Reppy, AT&T Bell Laboratories, Murray Hill, NJ 07974.
+
+*)
+
+signature POLYHASH = sig
     type ('key, 'data) hash_table
 
     val mkTable     : ('key -> int) * ('key * 'key -> bool) -> int * exn 
