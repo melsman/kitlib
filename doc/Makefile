@@ -9,5 +9,5 @@ IMPL:=$(IMPL:%=../%)
 gen:
 	rm -rf gen
 	mkdir gen
-	(cd gen; /Users/mael/gits/sigdoc/sigdoc -sigs $(SIGS) -impl $(IMPL))
-	cp /Users/mael/gits/sigdoc/lib/* gen/
+	(cd gen; sigdoc -sigs $(SIGS) -impl $(IMPL))
+	cp -f $(HOME)/.smackage/lib/sigdoc/v1/lib/* gen/

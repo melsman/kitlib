@@ -12,5 +12,6 @@ in base/base.mlb
    set/set.mlb
    sml90/sml90.mlb
    susp/susp.mlb
+   uref/uref.mlb
    utest/utest.mlb
 end

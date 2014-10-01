@@ -24,6 +24,7 @@ below are denoted with an `f` in parenthesis, and structures with an `s` in case
  `set/set.mlb` | MONO_SET, IntSet, NatSet, StringSet, OrderSet (f)
  `sml90/sml90.mlb` | SML90, SML90 (s)
  `susp/susp.mlb` | SUSP, Susp
+ `uref/uref.mlb` | UREF, Uref
  `utest/utest.mlb` | UTEST, Utest
 
 License
