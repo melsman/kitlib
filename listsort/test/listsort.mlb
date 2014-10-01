@@ -1,0 +1,7 @@
+local
+   $(SML_LIB)/basis/basis.mlb
+   ../../random/random.mlb
+   ../../listsort/listsort.mlb
+   ../../utest/utest.mlb
+in listsort.sml
+end
