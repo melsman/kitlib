@@ -1,0 +1,4 @@
+description: A collection of Standard ML libraries
+maintainer: Martin Elsman <mael@di.ku.dk>
+keywords: sets, finite maps, uref, pretty printing, serialization
+license: MIT License - See LICENSE file
