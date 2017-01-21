@@ -5,7 +5,7 @@ _A collection of Standard ML libraries_
 -----
 
 The collection of libraries are organised in mlb-files, each of which
-export a number of signatures, functors, and structures. Identifiers
+exports a number of signatures, functors, and structures. Identifiers
 follow the naming convention that signatures are fully capitalized,
 whereas functors and structures start with a capital letter (functors
 below are denoted with an `f` in parenthesis, and structures with an `s` in cases of ambiguity).
